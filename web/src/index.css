@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.logo {
+    /* background: url("https://cdn.casdoor.com/logo/casdoor-logo_1185x256.png"); (original) */
+    background: url("assets/trebe_COLOR-HOR-SIN.png");
+    background-size: 130px, 27px;
+    width: 130px;
+    height: 50px;
+    /*background: rgba(0, 0, 0, 0.2);*/
+    margin: 7px 10px 16px 20px;
+    float: left;
+}
+
+.ant-table.ant-table-middle .ant-table-title,
+.ant-table.ant-table-middle .ant-table-footer,
+.ant-table.ant-table-middle thead>tr>th,
+.ant-table.ant-table-middle tbody>tr>td {
+    padding: 1px 8px !important;
+}
+
+.ant-list-sm .ant-list-item {
+    padding: 2px !important;
+}
+
+.ant-layout-header {
+    background-color: white !important;
+}
+
+.all {
+    width: 100%;
+    text-align: center;
+}
+
+.testingStyle {
+    color: red!important;
+    margin-top: 2%
+}
+
+.toLeft {
+    width: 50%;
+    float: left;
+}
+
+.toRight {
+    width: 50%;
+    float: right;
+}
+
+textarea {
+    width: 80%;
+    resize: none!important;
+}
+
+.model {
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+@media screen and (max-width: 600px) {
+    .toLeft {
+        width: 90%;
+        float: none;
+        margin: auto;
+    }
+
+    .toRight {
+        width: 90%;
+        float: none;
+        margin: auto;
+    }
+
+    textarea {
+        width: 90%;
+        resize: none!important;
+    }
+}
