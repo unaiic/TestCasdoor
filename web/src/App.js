@@ -270,7 +270,7 @@ class App extends Component {
       )
     } else {
       return (
-        <Avatar src={this.state.account.avatar} style={{verticalAlign: 'middle' }} size="large">
+        <Avatar src={this.state.account.avatar} style={{verticalAlign: 'middle', margin: '0'}} size="large">
           {Setting.getShortName(this.state.account.name)}
         </Avatar>
       )
@@ -296,12 +296,14 @@ class App extends Component {
 
     return (
       <Dropdown key="/rightDropDown" overlay={menu} className="rightDropDown">
-        <div className="ant-dropdown-link" style={{float: 'right', cursor: 'pointer', marginRight: '2%'}}>
+        <div className="ant-dropdown-link" style={{float: 'right', cursor: 'pointer'}}>
           &nbsp;
           &nbsp;
           {
             this.renderAvatar()
           }
+          &nbsp;
+          &nbsp;
         </div>
       </Dropdown>
     )
@@ -609,75 +611,63 @@ class App extends Component {
   }
 
   renderContent() {
-    if (!Setting.isMobile()) {
-      return (
-        <div style={{display: 'flex', flex: 'auto', width:"100%", flexDirection: 'column'}}>
-          <Layout style={{display: 'flex', alignItems: 'stretch'}}>
-          <Header style={{padding: '0', marginBottom: '3px', flex: '1 1 auto'}}>
-            {
+    const toggleNav = () => {
+      const menu = document.getElementById("sidenav");
+
+      if (menu.style.display != "none") {
+        menu.style.width = "0";
+        menu.style.display = "none";
+      } else {
+        const totalHeight = window.innerHeight;
+        const headerHeight = document.getElementById("header").offsetHeight;
+        const menuHeight = 100 * ((totalHeight - headerHeight) / totalHeight);
+
+        menu.style.height = menuHeight + "vh";
+        menu.style.width = "auto";
+        menu.style.display = "block";
+      }
+    }
+
+    return (
+      <div style={{display: 'flex', flex: 'auto', width:"100%", flexDirection: 'column'}}>
+        <Layout style={{display: 'flex', alignItems: 'stretch'}}>
+          <Header id='header' style={{padding: '0', marginBottom: '3px', display: 'flex', alignContent: 'center', alignItems: 'center'}}>
+            <span id ="menu" style={{fontSize: '24px', cursor: 'pointer', marginLeft: '1.5%', paddingRight: '0.5%', paddingLeft: '0.5%'}} onClick={toggleNav}>
+              &#9776;
+            </span>
+            <div style={{marginTop: '0', marginLeft: '1px'}}>
               <Link to={"/"}>
                 <div className="logo" />
               </Link>
-            }
-            <Menu
-              // theme="dark"
-              mode={"horizontal"}
-              selectedKeys={[`${this.state.selectedMenuKey}`]}
-              style={{ lineHeight: '64px'}}
-            >
-              {
-                this.renderMenu()
-              }
-            <div style = {{float: 'right'}}>
-            {
-              this.renderAccount()
-            }
-          <SelectLanguageBox/>
-          </div>
-            </Menu>
-          </Header>
-          <Layout style={{backgroundColor: "#f5f5f5", alignItems: 'stretch'}}>
-            <Card className="content-warp-card">
-              {
-              this.renderRouter()
-              }
-            </Card>
-          </Layout>
-          </Layout>
-        </div>
-      )
-    } else {
-      return(
-        <div>
-        <Header style={{ padding: '0', marginBottom: '3px'}}>
-          {
-            <Link to={"/"}>
-              <div className="logo" />
-            </Link>
-          }
-          <Menu
-            // theme="dark"
-            mode={"horizontal"}
-            selectedKeys={[`${this.state.selectedMenuKey}`]}
-            style={{ lineHeight: '64px' }}
-          >
-            {
-              this.renderMenu()
-            }
-            <div style = {{float: 'right'}}>
+            </div>
+            <div style={{marginLeft: 'auto'}}>
               {
                 this.renderAccount()
               }
               <SelectLanguageBox/>
             </div>
-          </Menu>
-        </Header>
-        {
-          this.renderRouter()
-        }
+            <Menu
+              id='sidenav'
+              // theme="dark"
+              mode={"vertical"}
+              selectedKeys={[`${this.state.selectedMenuKey}`]}
+              style={{lineHeight: '32px', display: 'none'}}
+            >
+              {
+                this.renderMenu()
+              }
+            </Menu>
+          </Header>
+        <Layout style={{backgroundColor: "#f5f5f5", alignItems: 'stretch'}}>
+          <Card className="content-warp-card">
+            {
+            this.renderRouter()
+            }
+          </Card>
+        </Layout>
+        </Layout>
       </div>
-      )
-    }
+    )
   }
 
   renderFooter() {

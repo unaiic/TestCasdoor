@@ -39,5 +39,25 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      window.addEventListener('resize', (event) => {
+        const menu = document.getElementById("sidenav");
+
+        if (menu.style.display != "none") {
+          const totalHeight = window.innerHeight;
+          const headerHeight = document.getElementById("header").offsetHeight;
+          const menuHeight = 100 * ((totalHeight - headerHeight) / totalHeight);
+  
+          menu.style.height = menuHeight + "vh";
+        }
+      });
+
+      document.addEventListener('click', (event) => {
+        const menu = document.getElementById("sidenav");
+        if (event.target.id != "menu" && menu.style.display != "none") {
+          menu.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>

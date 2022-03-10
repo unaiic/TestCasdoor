@@ -16,8 +16,8 @@ code {
     width: 130px;
     height: 50px;
     /*background: rgba(0, 0, 0, 0.2);*/
-    margin: 7px 10px 16px 20px;
-    float: left;
+    margin: 0px 0px 10px 10px!important;
+    /* float: left; */
 }
 
 .ant-table.ant-table-middle .ant-table-title,
@@ -63,6 +63,29 @@ textarea {
 .model {
     margin-top: 2%;
     margin-bottom: 4%;
+}
+
+#sidenav {
+    display: none;
+    padding-right: 3%;
+    height: 93vh;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+#sidenav a {
+    padding: 10%;
+    padding-right: 10%;
+    font-size: large!important;
+    display: block;
+}
+
+.ant-menu-item, .ant-menu-item:active, .ant-menu-item:focus {
+    background-color: transparent!important;
 }
 
 @media screen and (max-width: 600px) {
