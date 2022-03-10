@@ -36,20 +36,22 @@ class HomePage extends React.Component {
         {link: "/applications", name: i18next.t("general:Applications"), organizer: i18next.t("general:Applications that require authentication")},
       ];
     } else {
-      // switch based on role
+      // TODO: switch based on role
+      // TODO: translate
       items = [
         {link: "/translate", name: "Traductor", organizer: "Traductor automático neuronal"},
-        // {link: "/translate", name: "Traductor", organizer: "Traductor automático neuronal"},
+        {link: "/text-to-speech", name: "Text to speech", organizer: "Texto a voz"},
         // {link: "/translate", name: "Traductor", organizer: "Traductor automático neuronal"},
         // {link: "/translate", name: "Traductor", organizer: "Traductor automático neuronal"},
         // {link: "/translate", name: "Traductor", organizer: "Traductor automático neuronal"},
       ];
     }
 
+    // TODO: fix image handling
     // set card images (if needed)
     for (let i = 0; i < items.length; i++) {
       let filename = items[i].link;
-      if (filename === "/account" || filename === "/translate") {
+      if (filename === "/account" || filename === "/translate" || filename === "/text-to-speech") {
         filename = "/users";
       }
       items[i].logo = `https://cdn.casbin.com/static/img${filename}.png`;

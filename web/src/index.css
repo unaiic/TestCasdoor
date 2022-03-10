@@ -9,6 +9,7 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+/* // TODO: cleanup */
 .logo {
     /* background: url("https://cdn.casdoor.com/logo/casdoor-logo_1185x256.png"); (original) */
     background: url("assets/trebe_COLOR-HOR-SIN.png");
@@ -35,6 +36,7 @@ code {
     background-color: white !important;
 }
 
+/* TODO: cleanup */
 .all {
     width: 100%;
     text-align: center;

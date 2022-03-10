@@ -337,6 +337,7 @@ class App extends Component {
     return res;
   }
 
+  // TODO: create and define all options
   options1(res) {
     res.push(
       <Menu.Item key="/translate">
@@ -393,7 +394,8 @@ class App extends Component {
     );
 
     if (!Setting.isAdminUser(this.state.account)) {
-      const userRole = 4;
+      // TODO: change role depending on user
+      const userRole = 2;
 
       switch (userRole) {
         case 1:
@@ -419,6 +421,7 @@ class App extends Component {
       }
     }
 
+    // TODO: cleanup?
     if (Setting.isAdminUser(this.state.account)) {
       res.push(
         <Menu.Item key="/organizations">
@@ -563,6 +566,7 @@ class App extends Component {
       window.location.pathname === '/';
   }
 
+  // TODO: cleanup?
   renderRouter(){
     return(
       <div>
@@ -613,23 +617,26 @@ class App extends Component {
   }
 
   renderContent() {
+    // Show and hide menu when clicking
     const toggleNav = () => {
-      const menu = document.getElementById("sidenav");
+      const menu = document.getElementById("sidenav"); // Menu
 
-      if (menu.style.display != "none") {
+      if (menu.style.display != "none") { // Hide
         menu.style.width = "0";
         menu.style.display = "none";
       } else {
         const totalHeight = window.innerHeight;
         const headerHeight = document.getElementById("header").offsetHeight;
+        // Calculate header offset in vh
         const menuHeight = 100 * ((totalHeight - headerHeight) / totalHeight);
-
+        // Show
         menu.style.height = menuHeight + "vh";
         menu.style.width = "auto";
         menu.style.display = "block";
       }
     }
 
+    // TODO: responsive?
     return (
       <div style={{display: 'flex', flex: 'auto', width:"100%", flexDirection: 'column'}}>
         <Layout style={{display: 'flex', alignItems: 'stretch'}}>
@@ -672,6 +679,7 @@ class App extends Component {
     )
   }
 
+  // TODO: responsive
   renderFooter() {
     // How to keep your footer where it belongs ?
     // https://www.freecodecamp.org/neyarnws/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/

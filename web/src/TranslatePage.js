@@ -27,6 +27,9 @@ class TranslatePage extends React.Component {
       document.getElementById("inputText").value = "";
     }
 
+    // TODO: integrate APIs and functionality
+    // TODO: translate
+    // TODO: cleanup
     return (
       <div>
         <div className="all">
