@@ -280,6 +280,9 @@ class App extends Component {
   renderRightDropdown() {
     const menu = (
       <Menu onClick={this.handleRightDropdownClick.bind(this)}>
+        <Menu.Item style={{marginBottom: '1%'}}>
+          {Setting.getShortName(this.state.account.name)}
+        </Menu.Item>
         <Menu.Item key="/account">
           <SettingOutlined />
           {i18next.t("account:My Account")}
@@ -293,18 +296,12 @@ class App extends Component {
 
     return (
       <Dropdown key="/rightDropDown" overlay={menu} className="rightDropDown">
-        <div className="ant-dropdown-link" style={{float: 'right', cursor: 'pointer'}}>
+        <div className="ant-dropdown-link" style={{float: 'right', cursor: 'pointer', marginRight: '2%'}}>
           &nbsp;
           &nbsp;
           {
             this.renderAvatar()
           }
-          &nbsp;
-          &nbsp;
-          {Setting.isMobile() ? null : Setting.getShortName(this.state.account.displayName)} &nbsp; <DownOutlined />
-          &nbsp;
-          &nbsp;
-          &nbsp;
         </div>
       </Dropdown>
     )
@@ -508,30 +505,30 @@ class App extends Component {
         </Menu.Item>
       );
 
-      if (Conf.EnableExtraPages) {
-        res.push(
-          <Menu.Item key="/products">
-            <Link to="/products">
-              {i18next.t("general:Products")}
-            </Link>
-          </Menu.Item>
-        );
-        res.push(
-          <Menu.Item key="/payments">
-            <Link to="/payments">
-              {i18next.t("general:Payments")}
-            </Link>
-          </Menu.Item>
-        );
-      }
+      // if (Conf.EnableExtraPages) {
+      //   res.push(
+      //     <Menu.Item key="/products">
+      //       <Link to="/products">
+      //         {i18next.t("general:Products")}
+      //       </Link>
+      //     </Menu.Item>
+      //   );
+      //   res.push(
+      //     <Menu.Item key="/payments">
+      //       <Link to="/payments">
+      //         {i18next.t("general:Payments")}
+      //       </Link>
+      //     </Menu.Item>
+      //   );
+      // }
 
-      res.push(
-        <Menu.Item key="/swagger">
-          <a target="_blank" rel="noreferrer" href={Setting.isLocalhost() ? `${Setting.ServerUrl}/swagger` : "/swagger"}>
-            {i18next.t("general:Swagger")}
-          </a>
-        </Menu.Item>
-      );
+      // res.push(
+      //   <Menu.Item key="/swagger">
+      //     <a target="_blank" rel="noreferrer" href={Setting.isLocalhost() ? `${Setting.ServerUrl}/swagger` : "/swagger"}>
+      //       {i18next.t("general:Swagger")}
+      //     </a>
+      //   </Menu.Item>
+      // );
     }
 
     return res;
@@ -614,9 +611,9 @@ class App extends Component {
   renderContent() {
     if (!Setting.isMobile()) {
       return (
-        <div style={{display: 'flex', flex: 'auto',width:"100%",flexDirection: 'column'}}>
+        <div style={{display: 'flex', flex: 'auto', width:"100%", flexDirection: 'column'}}>
           <Layout style={{display: 'flex', alignItems: 'stretch'}}>
-          <Header style={{padding: '0', marginBottom: '3px'}}>
+          <Header style={{padding: '0', marginBottom: '3px', flex: '1 1 auto'}}>
             {
               <Link to={"/"}>
                 <div className="logo" />
