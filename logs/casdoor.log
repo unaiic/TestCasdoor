@@ -1836,3 +1836,228 @@
 2022/03/09 14:00:21.941 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.800256ms|   match|[97;46m POST    [0m /api/login   r:/api/login
 2022/03/09 14:00:22.461 [I]  (127.0.0.1: ) subOwner = built-in, subName = user1, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
 2022/03/09 14:00:22.462 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.342386ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/09 20:52:37.612 [I]  http server Running on http://:8000
+2022/03/09 20:54:56.997 [D]  |      127.0.0.1|[97;42m 200 [0m|    346.151µs|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/09 20:54:57.159 [I]  (127.0.0.1: ) subOwner = anonymous, subName = anonymous, method = GET, urlPath = /api/get-application, obj.Owner = admin, obj.Name = app-built-in, result = allow
+2022/03/09 20:54:57.161 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.944279ms|   match|[97;44m GET     [0m /api/get-application   r:/api/get-application
+2022/03/09 20:57:05.803 [D]  |      127.0.0.1|[97;42m 200 [0m|    587.842µs|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/09 20:57:05.829 [I]  (127.0.0.1: ) subOwner = anonymous, subName = anonymous, method = GET, urlPath = /api/get-application, obj.Owner = admin, obj.Name = app-built-in, result = allow
+2022/03/09 20:57:05.832 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.580996ms|   match|[97;44m GET     [0m /api/get-application   r:/api/get-application
+2022/03/09 20:57:08.217 [D]  |      127.0.0.1|[97;42m 200 [0m|    557.483µs|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/09 20:57:08.225 [I]  (127.0.0.1: ) subOwner = anonymous, subName = anonymous, method = GET, urlPath = /api/get-application, obj.Owner = admin, obj.Name = app-built-in, result = allow
+2022/03/09 20:57:08.228 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.874116ms|   match|[97;44m GET     [0m /api/get-application   r:/api/get-application
+2022/03/09 20:57:27.644 [I]  (127.0.0.1: ) subOwner = anonymous, subName = anonymous, method = POST, urlPath = /api/login, obj.Owner = , obj.Name = , result = allow
+2022/03/09 20:57:27.648 [I]  (127.0.0.1: ) API: [built-in/admin] signed in
+2022/03/09 20:57:27.648 [D]  |      127.0.0.1|[97;42m 200 [0m|   4.122325ms|   match|[97;46m POST    [0m /api/login   r:/api/login
+2022/03/09 20:57:27.928 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/09 20:57:27.929 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.514011ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/09 20:57:38.774 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/09 20:57:38.775 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.284886ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/09 20:57:40.558 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/09 20:57:40.559 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.638729ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/09 20:57:41.475 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/09 20:57:41.476 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.364025ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/09 20:57:43.621 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-organizations, obj.Owner = , obj.Name = , result = allow
+2022/03/09 20:57:43.622 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.059537ms|   match|[97;44m GET     [0m /api/get-organizations   r:/api/get-organizations
+2022/03/09 20:57:48.788 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-organization, obj.Owner = admin, obj.Name = built-in, result = allow
+2022/03/09 20:57:48.788 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = POST, urlPath = /api/get-ldaps, obj.Owner = , obj.Name = , result = allow
+2022/03/09 20:57:48.789 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.714849ms|   match|[97;44m GET     [0m /api/get-organization   r:/api/get-organization
+2022/03/09 20:57:48.790 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.423082ms|   match|[97;46m POST    [0m /api/get-ldaps   r:/api/get-ldaps
+2022/03/09 20:58:25.885 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = POST, urlPath = /api/update-organization, obj.Owner = admin, obj.Name = built-in, result = allow
+2022/03/09 20:58:29.430 [D]  |      127.0.0.1|[97;42m 200 [0m|    3.544905s|   match|[97;46m POST    [0m /api/update-organization   r:/api/update-organization
+2022/03/09 20:58:30.203 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-organizations, obj.Owner = , obj.Name = , result = allow
+2022/03/09 20:58:30.204 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.224071ms|   match|[97;44m GET     [0m /api/get-organizations   r:/api/get-organizations
+2022/03/09 20:58:38.813 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-global-users, obj.Owner = , obj.Name = , result = allow
+2022/03/09 20:58:38.814 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.434368ms|   match|[97;44m GET     [0m /api/get-global-users   r:/api/get-global-users
+2022/03/09 20:58:40.992 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-user, obj.Owner = built-in, obj.Name = admin, result = allow
+2022/03/09 20:58:40.993 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-applications, obj.Owner = , obj.Name = , result = allow
+2022/03/09 20:58:40.993 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-organizations, obj.Owner = , obj.Name = , result = allow
+2022/03/09 20:58:40.993 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-user-application, obj.Owner = built-in, obj.Name = admin, result = allow
+2022/03/09 20:58:40.995 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.482751ms|   match|[97;44m GET     [0m /api/get-applications   r:/api/get-applications
+2022/03/09 20:58:40.995 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.784422ms|   match|[97;44m GET     [0m /api/get-user   r:/api/get-user
+2022/03/09 20:58:40.996 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.969953ms|   match|[97;44m GET     [0m /api/get-organizations   r:/api/get-organizations
+2022/03/09 20:58:40.997 [D]  |      127.0.0.1|[97;42m 200 [0m|    5.29464ms|   match|[97;44m GET     [0m /api/get-user-application   r:/api/get-user-application
+2022/03/09 20:59:12.608 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = POST, urlPath = /api/update-user, obj.Owner = built-in, obj.Name = admin, result = allow
+2022/03/09 20:59:12.650 [D]  |      127.0.0.1|[97;42m 200 [0m|  42.194356ms|   match|[97;46m POST    [0m /api/update-user   r:/api/update-user
+2022/03/09 20:59:12.712 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-global-users, obj.Owner = , obj.Name = , result = allow
+2022/03/09 20:59:12.713 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.847801ms|   match|[97;44m GET     [0m /api/get-global-users   r:/api/get-global-users
+2022/03/10 08:12:01.911 [I]  http server Running on http://:8000
+2022/03/10 08:12:39.622 [D]  |      127.0.0.1|[97;42m 200 [0m|     576.31µs|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:12:39.921 [I]  (127.0.0.1: ) subOwner = anonymous, subName = anonymous, method = GET, urlPath = /api/get-application, obj.Owner = admin, obj.Name = app-built-in, result = allow
+2022/03/10 08:12:39.930 [D]  |      127.0.0.1|[97;42m 200 [0m|   9.713871ms|   match|[97;44m GET     [0m /api/get-application   r:/api/get-application
+2022/03/10 08:15:00.525 [I]  (127.0.0.1: ) subOwner = anonymous, subName = anonymous, method = POST, urlPath = /api/login, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:15:00.531 [I]  (127.0.0.1: ) API: [built-in/admin] signed in
+2022/03/10 08:15:00.531 [D]  |      127.0.0.1|[97;42m 200 [0m|   7.211153ms|   match|[97;46m POST    [0m /api/login   r:/api/login
+2022/03/10 08:15:01.175 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:15:01.177 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.243388ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:15:18.773 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-organizations, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:15:18.775 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.404478ms|   match|[97;44m GET     [0m /api/get-organizations   r:/api/get-organizations
+2022/03/10 08:15:33.849 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = POST, urlPath = /api/get-ldaps, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:15:33.849 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-organization, obj.Owner = admin, obj.Name = built-in, result = allow
+2022/03/10 08:15:33.851 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.098145ms|   match|[97;46m POST    [0m /api/get-ldaps   r:/api/get-ldaps
+2022/03/10 08:15:33.852 [D]  |      127.0.0.1|[97;42m 200 [0m|    4.24334ms|   match|[97;44m GET     [0m /api/get-organization   r:/api/get-organization
+2022/03/10 08:15:52.445 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-global-users, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:15:52.449 [D]  |      127.0.0.1|[97;42m 200 [0m|   5.802489ms|   match|[97;44m GET     [0m /api/get-global-users   r:/api/get-global-users
+2022/03/10 08:15:54.996 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-permissions, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:15:54.999 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.788571ms|   match|[97;44m GET     [0m /api/get-permissions   r:/api/get-permissions
+2022/03/10 08:16:59.273 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:16:59.275 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.219627ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:17:08.141 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:17:08.142 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.134626ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:18:04.808 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:18:04.811 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.648457ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:18:05.591 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:18:05.592 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.826758ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:18:52.017 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:18:52.019 [D]  |      127.0.0.1|[97;42m 200 [0m|    2.59018ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:18:52.842 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:18:52.844 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.185164ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:19:01.765 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:19:01.767 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.628865ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:19:07.169 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:19:07.171 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.376244ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:19:09.317 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:19:09.318 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.804463ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:19:17.234 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:19:17.237 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.810515ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:19:18.653 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:19:18.655 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.255898ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:19:28.432 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:19:28.434 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.966479ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:19:30.310 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:19:30.312 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.368699ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:19:38.740 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:19:38.743 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.979947ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:19:51.206 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:19:51.207 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.878809ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:19:54.289 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:19:54.291 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.069577ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:19:59.540 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:19:59.541 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.853711ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:20:05.736 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:20:05.738 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.291998ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:20:07.690 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:20:07.691 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.937664ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:20:08.957 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:20:08.959 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.792508ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:21:40.739 [D]  |      127.0.0.1|[90;47m 302 [0m|    158.276µs|   match|[97;44m GET     [0m /swagger
+2022/03/10 08:21:40.757 [D]  |      127.0.0.1|[97;42m 200 [0m|    255.311µs|   match|[97;44m GET     [0m /swagger/
+2022/03/10 08:21:40.799 [D]  |      127.0.0.1|[97;42m 200 [0m|    497.681µs|   match|[97;44m GET     [0m /swagger/swagger-ui.css
+2022/03/10 08:21:40.799 [D]  |      127.0.0.1|[97;42m 200 [0m|    547.544µs|   match|[97;44m GET     [0m /swagger/swagger-ui-standalone-preset.js
+2022/03/10 08:21:40.800 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.078417ms|   match|[97;44m GET     [0m /swagger/swagger-ui-bundle.js
+2022/03/10 08:21:41.188 [D]  |      127.0.0.1|[97;42m 200 [0m|    165.212µs|   match|[97;44m GET     [0m /swagger/swagger.json
+2022/03/10 08:21:41.745 [D]  |      127.0.0.1|[97;42m 200 [0m|     96.875µs|   match|[97;44m GET     [0m /swagger/favicon-32x32.png
+2022/03/10 08:22:02.721 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:22:02.723 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.687908ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:22:03.687 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:22:03.688 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.768462ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:22:06.856 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:22:06.857 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.960402ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:22:18.560 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-providers, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:22:18.561 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.772936ms|   match|[97;44m GET     [0m /api/get-providers   r:/api/get-providers
+2022/03/10 08:23:38.558 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:23:38.560 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.095196ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:23:58.951 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:23:58.956 [D]  |      127.0.0.1|[97;42m 200 [0m|   7.117607ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:24:06.578 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:24:06.580 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.816684ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:24:16.412 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:24:16.414 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.677032ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:24:24.208 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:24:24.211 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.843197ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:25:34.285 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:25:34.287 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.843626ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:25:41.065 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:25:41.067 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.381962ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:27:03.161 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:27:03.162 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.445498ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:28:09.154 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-organizations, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:28:09.156 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.124482ms|   match|[97;44m GET     [0m /api/get-organizations   r:/api/get-organizations
+2022/03/10 08:28:10.791 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-global-users, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:28:10.795 [D]  |      127.0.0.1|[97;42m 200 [0m|    5.07991ms|   match|[97;44m GET     [0m /api/get-global-users   r:/api/get-global-users
+2022/03/10 08:28:12.892 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-roles, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:28:12.894 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.470049ms|   match|[97;44m GET     [0m /api/get-roles   r:/api/get-roles
+2022/03/10 08:30:26.059 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:30:26.061 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.374014ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:30:57.522 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:30:57.524 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.987234ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:31:42.892 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:31:42.894 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.307698ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:31:45.134 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:31:45.136 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.757064ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:31:51.357 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:31:51.359 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.332258ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:31:57.794 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-syncers, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:31:57.797 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.632198ms|   match|[97;44m GET     [0m /api/get-syncers   r:/api/get-syncers
+2022/03/10 08:32:00.773 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = POST, urlPath = /api/add-syncer, obj.Owner = admin, obj.Name = syncer_bf8you, result = allow
+2022/03/10 08:32:00.809 [D]  |      127.0.0.1|[97;42m 200 [0m|  36.730113ms|   match|[97;46m POST    [0m /api/add-syncer   r:/api/add-syncer
+2022/03/10 08:32:00.867 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-syncer, obj.Owner = admin, obj.Name = syncer_bf8you, result = allow
+2022/03/10 08:32:00.867 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-organizations, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:32:00.868 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.825993ms|   match|[97;44m GET     [0m /api/get-syncer   r:/api/get-syncer
+2022/03/10 08:32:00.869 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.744887ms|   match|[97;44m GET     [0m /api/get-organizations   r:/api/get-organizations
+2022/03/10 08:32:04.446 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-syncers, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:32:04.450 [D]  |      127.0.0.1|[97;42m 200 [0m|   5.212197ms|   match|[97;44m GET     [0m /api/get-syncers   r:/api/get-syncers
+2022/03/10 08:34:36.423 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:34:36.424 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.825983ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:38:40.039 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:38:40.040 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.898602ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:38:44.533 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:38:44.535 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.445047ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:39:44.568 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:39:44.570 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.220595ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:39:56.507 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:39:56.509 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.148833ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:40:22.012 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:40:22.014 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.876762ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:42:06.725 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:42:06.727 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.309956ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:42:14.420 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:42:14.423 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.859459ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:43:34.185 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:43:34.186 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.845735ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:43:45.715 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:43:45.716 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.785743ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:43:54.405 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:43:54.407 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.771512ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:45:28.169 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:45:28.171 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.302219ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:47:44.442 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:47:44.443 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.915934ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:48:04.369 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:48:04.371 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.032731ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:48:17.764 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-records, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:48:17.768 [D]  |      127.0.0.1|[97;42m 200 [0m|   4.267032ms|   match|[97;44m GET     [0m /api/get-records   r:/api/get-records
+2022/03/10 08:48:28.512 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-applications, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:48:28.515 [D]  |      127.0.0.1|[97;42m 200 [0m|   4.364678ms|   match|[97;44m GET     [0m /api/get-applications   r:/api/get-applications
+2022/03/10 08:48:33.444 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-application, obj.Owner = admin, obj.Name = app-built-in, result = allow
+2022/03/10 08:48:33.445 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-certs, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:48:33.446 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-organizations, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:48:33.448 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-providers, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:48:33.448 [D]  |      127.0.0.1|[97;42m 200 [0m|   5.544489ms|   match|[97;44m GET     [0m /api/get-certs   r:/api/get-certs
+2022/03/10 08:48:33.448 [D]  |      127.0.0.1|[97;42m 200 [0m|    5.83291ms|   match|[97;44m GET     [0m /api/get-organizations   r:/api/get-organizations
+2022/03/10 08:48:33.449 [D]  |      127.0.0.1|[97;42m 200 [0m|   6.151578ms|   match|[97;44m GET     [0m /api/get-providers   r:/api/get-providers
+2022/03/10 08:48:33.450 [D]  |      127.0.0.1|[97;42m 200 [0m|   8.025464ms|   match|[97;44m GET     [0m /api/get-application   r:/api/get-application
+2022/03/10 08:48:33.568 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-application, obj.Owner = admin, obj.Name = app-built-in, result = allow
+2022/03/10 08:48:33.570 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.042673ms|   match|[97;44m GET     [0m /api/get-application   r:/api/get-application
+2022/03/10 08:48:33.688 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-user, obj.Owner = built-in, obj.Name = admin, result = allow
+2022/03/10 08:48:33.689 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.467758ms|   match|[97;44m GET     [0m /api/get-user   r:/api/get-user
+2022/03/10 08:49:40.973 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = POST, urlPath = /api/update-application, obj.Owner = admin, obj.Name = app-built-in, result = allow
+2022/03/10 08:49:41.016 [D]  |      127.0.0.1|[97;42m 200 [0m|   43.54398ms|   match|[97;46m POST    [0m /api/update-application   r:/api/update-application
+2022/03/10 08:49:41.246 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-applications, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:49:41.250 [D]  |      127.0.0.1|[97;42m 200 [0m|   4.050168ms|   match|[97;44m GET     [0m /api/get-applications   r:/api/get-applications
+2022/03/10 08:52:15.871 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:52:15.873 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.852845ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
+2022/03/10 08:52:16.006 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-applications, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:52:16.008 [D]  |      127.0.0.1|[97;42m 200 [0m|   2.039507ms|   match|[97;44m GET     [0m /api/get-applications   r:/api/get-applications
+2022/03/10 08:52:20.513 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = POST, urlPath = /api/logout, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:52:20.514 [I]  (127.0.0.1: ) API: [built-in/admin] logged out
+2022/03/10 08:52:20.514 [D]  |      127.0.0.1|[97;42m 200 [0m|   4.027801ms|   match|[97;46m POST    [0m /api/logout   r:/api/logout
+2022/03/10 08:52:20.621 [I]  (127.0.0.1: ) subOwner = anonymous, subName = anonymous, method = GET, urlPath = /api/get-application, obj.Owner = admin, obj.Name = app-built-in, result = allow
+2022/03/10 08:52:20.624 [D]  |      127.0.0.1|[97;42m 200 [0m|    4.09035ms|   match|[97;44m GET     [0m /api/get-application   r:/api/get-application
+2022/03/10 08:52:20.655 [I]  (127.0.0.1: ) subOwner = anonymous, subName = anonymous, method = GET, urlPath = /api/get-application, obj.Owner = admin, obj.Name = app-built-in, result = allow
+2022/03/10 08:52:20.657 [D]  |      127.0.0.1|[97;42m 200 [0m|   3.851586ms|   match|[97;44m GET     [0m /api/get-application   r:/api/get-application
+2022/03/10 08:52:27.898 [I]  (127.0.0.1: ) subOwner = anonymous, subName = anonymous, method = POST, urlPath = /api/login, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:52:27.905 [I]  (127.0.0.1: ) API: [built-in/admin] signed in
+2022/03/10 08:52:27.905 [D]  |      127.0.0.1|[97;42m 200 [0m|   8.153997ms|   match|[97;46m POST    [0m /api/login   r:/api/login
+2022/03/10 08:52:28.289 [I]  (127.0.0.1: ) subOwner = built-in, subName = admin, method = GET, urlPath = /api/get-account, obj.Owner = , obj.Name = , result = allow
+2022/03/10 08:52:28.290 [D]  |      127.0.0.1|[97;42m 200 [0m|   1.990005ms|   match|[97;44m GET     [0m /api/get-account   r:/api/get-account
