@@ -20,6 +20,7 @@ import {DownOutlined, LogoutOutlined, SettingOutlined} from '@ant-design/icons';
 import {Avatar, BackTop, Dropdown, Layout, Menu, Card, Result, Button} from 'antd';
 import {Link, Redirect, Route, Switch, withRouter} from 'react-router-dom';
 import TranslatePage from "./TranslatePage";
+import Text2Speech from "./Text2Speech";
 import OrganizationListPage from "./OrganizationListPage";
 import OrganizationEditPage from "./OrganizationEditPage";
 import UserListPage from "./UserListPage";
@@ -349,7 +350,7 @@ class App extends Component {
   options2(res) {
     res.push(
       <Menu.Item key="/text-to-speech">
-        <Link to="/">
+        <Link to="/text-to-speech">
           Text to speech
         </Link>
       </Menu.Item>
@@ -567,6 +568,7 @@ class App extends Component {
       <div>
         <Switch>
           <Route exact path="/translate" render={(props) => this.renderLoginIfNotLoggedIn(<TranslatePage account={this.state.account} {...props} />)}/>
+          <Route exact path="/text-to-speech" render={(props) => this.renderLoginIfNotLoggedIn(<Text2Speech account={this.state.account} {...props} />)}/>
           <Route exact path="/result" render={(props) => this.renderHomeIfLoggedIn(<ResultPage {...props} />)}/>
           <Route exact path="/result/:applicationName" render={(props) => this.renderHomeIfLoggedIn(<ResultPage {...props} />)}/>
           <Route exact path="/" render={(props) => this.renderLoginIfNotLoggedIn(<HomePage account={this.state.account} {...props} />)}/>

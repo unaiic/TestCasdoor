@@ -56,7 +56,7 @@ class TranslatePage extends React.Component {
               </div>
           </div>
           <div className="all">
-            <Button className="testingStyle" onClick={clearText}>Clear</Button>
+            <Button style={{marginTop: '2%'}} onClick={clearText}>Clear</Button>
           </div>
         </div>
       </div>

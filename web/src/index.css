@@ -40,11 +40,6 @@ code {
     text-align: center;
 }
 
-.testingStyle {
-    color: red!important;
-    margin-top: 2%
-}
-
 .toLeft {
     width: 50%;
     float: left;
